@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Saira", sans-serif;
+}
+
+body {
+    height: 100dvh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 4px 16px;
+
+    background: #e6d6d6;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    flex-grow: 1;
+
+    width: 100%;
+    padding: 24px 15%;
+
+    background: #dababa;
+}
+
+#task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    min-width: 350px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 16px;
+    border-radius: 15px;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.57);
+
+    background: #feecec;
+}
+
+.task-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.57);
+}
+
+.task-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 8px 16px;
+
+    background: #dababa;
+}
+
+.task-btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.task-title {
+    font-size: 24px;
+}
+
+.task-btn {
+    padding: 2px 16px;
+    font-weight: 600;
+
+    background: white;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.57);
+    border-radius: 10px;
+
+    font-size: 18px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.task-btn:hover {
+    background: #f0f0f9;
+}
+
+.task-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+
+    width: 100%;
+    padding: 8px 16px;
+
+    background: #ffffff;
+}
+
+@media (min-height: 600px) {
+    #nav-title {
+        font-size: 90px;
+    }
+
+    main {
+        padding: 24px;
+    }
+
+    #task-container {
+        padding: 20px 40px;
+        border-radius: 30px;
+    }
+
+    .task-card {
+        margin: 20px 0;
+        border-radius: 30px;
+    }
+
+    .task-header {
+        padding: 16px 32px;
+    }
+
+    .task-title {
+        font-size: 80px;
+    }
+
+    .task-btn {
+        font-size: 50px;
+        padding: 10px 40px;
+        border-radius: 30px;
+    }
+
+    .task-details {
+        padding: 16px 32px;
+        font-size: 60px;
+    }
+}
