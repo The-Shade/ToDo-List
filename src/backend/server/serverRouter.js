@@ -5,7 +5,7 @@ const router = express.Router();
 
 const { MongoClient } = require('mongodb');
 let client = new MongoClient(process.env.MONGODB_URI);
-let tasks = client.db(process.env.DB_NAME).collection(process.env.COLLECTION_NAME);
+let tasks = client.db(process.env.DB_NAME).collection(process.env.TASKS_COLLECTION_NAME);
 
 router.get('/', async (req, res) => {
     try {
